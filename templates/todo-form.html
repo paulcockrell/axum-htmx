@@ -1,0 +1,17 @@
+<form
+    hx-post="/api/todos"
+    hx-target="#todos"
+    hx-swap="innerHTML"
+>
+    <label for="todo">Todo</label>
+    <div>
+        <input
+            type="text"
+            name="todo"
+            id="todo"
+            placeholder="Replace frontend with htmx"
+        />
+        <button type="submit">Add</button>
+    </div>
+</form>
+<div id="todos" />

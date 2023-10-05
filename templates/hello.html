@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Hello!{% endblock%}
+
+{% block content %}
+<h1>Hello, World (and Moss and Bob)!</h1>
+<button
+    type="button"
+    hx-get="/api/hello"
+    hx-swap="innerHtml"
+>
+    Say hello!
+</button>
+
+{% include "todo-form.html" %}
+
+{% endblock %}
